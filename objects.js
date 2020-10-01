@@ -1,9 +1,11 @@
 var playlist = { 'Mr Zim': 'Plamp' };
 
 function updatePlayList(playlist, artistName, songTitle) {
-  return (playlist[artistName] = songTitle);
+  playlist[artistName] = songTitle;
+  return playlist;
 }
 
 function removeFromPlaylist(playlist, artistName) {
-  return playlist.remove(artistName);
+  playlist.remove(artistName);
+  return playlist;
 }
